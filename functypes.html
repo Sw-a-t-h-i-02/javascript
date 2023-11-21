@@ -1,0 +1,84 @@
+<html>
+    <body>
+        <script>
+            //pr1.sum of integers
+            //named
+            function func(){
+    sum=0;
+    for(a=0;a<=10;a++){
+        sum=sum+a;
+    }
+    return sum;
+}
+console.log(func());
+//arrow function
+var func=()=>{
+    sum=0;
+    for(a=0;a<=10;a++){
+        sum=sum+a;
+    }
+    return sum;
+}
+console.log(func());
+//ananyomus function
+var b=function(){
+    sum=0;
+    for(a=0;a<=10;a++){
+        sum=sum+a;
+    }
+    return sum;
+}
+console.log(b());
+//imidiate invocation function
+
+var f=(function(){
+sum=0;
+    for(a=0;a<=10;a++){
+        sum=sum+a;
+    }
+    return sum;
+}
+)
+console.log(f());
+//pr2.factorial numbers.
+//named function
+function func(){
+    var m=1;
+    for(i=1;i<=5;i++){
+        m=m*i;
+    }
+    return m;
+}
+console.log(func());
+//arrow function
+var b=()=>{
+    var m=1;
+    for(i=1;i<=5;i++){
+        m=m*i;
+    }
+    return m;
+}
+console.log(b());
+//ananymous function
+var b=function(){
+    var m=1;
+    for(i=1;i<=5;i++){
+        m=m*i;
+    }
+    return m;
+}
+console.log(b());
+//imidiate invocation function
+var b=(function(){
+    var m=1;
+    for(i=1;i<=5;i++){
+        m=m*i;
+    }
+    return m;
+}
+)
+console.log(b());
+
+        </script>
+    </body>
+</html>
