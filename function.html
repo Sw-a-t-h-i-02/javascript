@@ -1,0 +1,92 @@
+<html>
+    <body>
+        <script>
+            //1.**Factorial Calculator**: Write a function that calculates the factorial of a given number. The factorial of a non-negative integer n is the product of all positive integers less than or equal to n.
+            function fun(a){
+    var m=1;
+    for(i=1;i<=a;i++)
+    {
+        m=m*i;
+    }
+    return m;
+}
+console.log(fun(5));
+//3.even or odd number
+function fun(){
+    var a=0;
+    if(a%2==0){
+        return "a is even number";
+    }
+    else{
+        return "a is odd number";
+    }
+}
+console.log(fun());
+//3.prime number
+function fun(i){
+   var i=5;
+       var factcount=0;
+       for(j=1;j<=i;j++){
+           if(i%j==0){
+               factcount++;                                                                                                                               
+           }
+       }
+        if(factcount==2){
+           console.log(i);
+        }
+}
+   console.log(fun(5));
+   //4.Create a function that takes two numbers and an operator as arguments and returns the result of the operation (e.g., add, subtract, multiply, divide).
+   function fun(a,b,operator){
+ if(operator==='+'){
+    return a+b;
+}
+else if(operator==='-'){
+    return a-b;
+}
+else if(operator==='*'){
+    return a*b;
+}
+else if(operator==='/'){
+   if(b!==0){
+       return a/b;
+   }
+   else{
+       return "cannot divide by zero";
+   }
+}
+else if(operator==='%'){
+    return a%b;
+}
+else{
+    return "operator is invalid";
+}
+}
+console.log(fun(5,0,'/'));
+//5.smallest of 2 numbers
+function fun(a,b){
+     if(a<b){
+         return " a is the smallest number";
+     }
+     else{
+         return "b is the smallest number";
+     }
+ }
+ console.log(fun(50,30));
+ //6.greatest of 2 numbers
+ function fun(a,b,c){
+     if(a<b && a>c){
+         return "a is the greates number";
+     }
+     else if(b>a && b>c){
+         return "b is the greatest number";
+     }
+     else{
+         return "c is the greatest number"; 
+     }
+ }
+ console.log(fun(20,50,60));
+ //7.
+        </script>
+    </body>
+</html>
