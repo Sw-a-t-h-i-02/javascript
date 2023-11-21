@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Write a program that prints numbers from 10 to 1 in descending order using a while loop.
+        var a=10;
+        while(a>=1){
+            console.log(a);
+            a--;
+        }
+        //2.Create a program that prints the square of numbers from 1 to 10 using a for loop.
+        for(i=2;i<=10;i++){
+          console.log(i**2);
+                 }
+                 //3.Write a program that prints even numbers from 2 to 20 using a for loop.
+                 for(i=2;i<=20;i++){
+                 if(i%2==0){
+                   console.log(i);
+                  }
+                   }
+                   //4.Create a program that prints the cube of numbers from 1 to 10 using a while loop.
+                   var a=1;
+                     while(a<=10) {
+                    console.log(a**3);
+                      a++;
+                          }
+                 //5.Write a program that prints numbers from 1 to 20, skipping every second number (1, 3, 5, 7, 9, 11, 13, 15, 17, 19) using a for loop.
+                 for(i=1;i<=20;i=i+2){
+                    console.log(i);
+                 }
+                 //6.Write a program that prints whether a number is even or odd for numbers 1 to 20 using a for loop.
+           for(i=0;i<=20;i=i+1)
+           if(i%2==0){
+           console.log(i+" is even numbers");
+          }
+           else{
+           console.log(i+ "is odd number")
+                } 
+                //7.Write a program that calculates the sum of digits for numbers from 1 to 20 using a while loop.
+                var sum=0;
+                var i=0;
+                while(i<=20){
+                  sum=sum+i;
+                   i++;
+                 }
+                 console.log(sum);
+                 // 8.Write a program that prints numbers from 20 to 1 in descending order using a for loop.
+                       
+                     for(i=20;i>=1;i--)
+                     {
+                       console.log(i);
+                         }
+                //9.Calculate and print the sum of even numbers from 1 to 20 using a while loop.
+                var sum=0;
+                var i=0;
+                while(i<=20){
+                  if(i%2==0){
+                    sum=sum+i;
+                     }
+                     i++;
+                   }
+                    console.log(sum);
+                    //10.Create an infinite loop using a while loop. Make sure to include a condition to break out of the loop eventually.
+                    var a=0;
+                    while(a<=10){
+                    console.log(a);
+                     a++;
+                    if(a>=10){
+                    console.log("breaking out of the loop");
+                     break;
+                           }
+                        }
+                        //11.  Write a program that prints the powers of 2 up to 2^10 (1024) using a while loop.
+                           var a=1;
+                         var b=2;
+                          while(a<=10){
+                         console.log(b**a);
+                         a++;
+                         }
+                        //12.Modify the factorial program to print the factorial of numbers from 1 to 10 using a for loop.
+                         var fact=1;
+                       for(a=1;a<=10;a++){
+                           fact=fact*a;
+                           console.log(fact);
+                       }
+                        //13.Write a program that prints numbers from 1 to 30, marking each number divisible by 3 with an asterisk (*) using a while loop.
+
+                       var a=3;
+                      var mult=1;
+                      while(mult<=10){
+                       console.log(mult*a);
+                       mult++;
+                       }
+                       //14. Write a program that prints all prime numbers between 1 and 50 using a for loop.
+
+                       for(i=1;i<=50;i++){
+     var factcount=0;
+     for(j=1;j<=i;j++){
+         if(i%j==0){
+             factcount++;
+         }
+     }
+    if(factcount==2){
+        console.log(i);
+    }
+  }
+  for(i=0;i<=5;i++){
+    console.log("*_*");
+  }
+  15.//Write a program that prints numbers from 1 to 30, marking each number divisible by 3 with an asterisk (*) using a while loop.
+  var number = 1;
+
+while (number <= 30) {
+  if (number % 3 === 0) {
+    console.log(number + ' *');
+  } else {
+    console.log(number);
+  }
+  number++;
+}
+
+    </script>
+</body>
+</html>
