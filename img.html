@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            img{
+        width: 300px;
+        height: 200px;
+        margin-right: 20px;
+        margin-top: 50px;
+      }
+        </style>
+    </head>
+    <body>
+        <script>
+             let kk=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM_Es1rxOm3WycdZYzlq2CoFEL9Yqymb7UWQ&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNE7j-fDPyljRDy9QSnxvzUZOrHxlmcNY3xQ&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2oxE2m1UyLz1GDkI-DuzrxbXiC1iRykDYzw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqzbU7WkCZW9ylpe8T7tydAIjr748EX4x33Q&usqp=CAU"]
+          for(i=0;i<kk.length;i++){
+            let c=document.createElement("img")
+            console.log(kk[0])
+            document.body.append(c)
+            c.setAttribute("src",kk[i])
+
+          }
+        </script>
+
+    </body>
+</html>
