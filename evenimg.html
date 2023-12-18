@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+                button{
+                background-color: black;
+                color: white;
+            }
+            body{
+                background-color: chocolate;
+            }
+        </style>
+    </head>
+    <body>
+
+        <button id="mybtn">click here for another  image</button>
+        <img id="myimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJubza2pErHhPxQXp66ZA--nnwQAILWhEAYA&usqp=CAU" alt="">
+        
+        
+        <script>
+let btn=document.getElementById("mybtn");
+btn.style.color="red";
+
+let img=document.getElementById("myimg");
+img.style.width="500px";
+
+btn.addEventListener("click",()=>{
+    img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzXjAhQuy0BOtC_myG_KcyVF4MGvhJTSv9kg&usqp=CAU"
+});
+        </script>
+    </body>
+
+</html>

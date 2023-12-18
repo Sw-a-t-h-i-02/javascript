@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <style>
+        
+
+           
+        div {
+              display: grid;
+              grid-template-columns: auto auto auto auto auto;
+              background-color: pink;
+              gap: 20px 40px;
+              padding: 30px;
+              }
+          body{
+              background-color: brown;
+          }
+          li{
+             background-color:white; 
+              padding: 20px;
+              list-style-type: none;
+              font-style: normal;
+              font-weight: bold;
+              font-family:Verdana, Geneva, Tahoma, sans-serif
+          }
+          img{
+              width: 100px;
+              height: 100px;
+          }
+
+        </style>
+        <body>
+           
+            
+            <script>
+               
+                let arr=[
+                    
+                
+                
+                
+                {id:1,title:"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          price:109.95,description:"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+          category:"men's clothing",
+          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVooSEj5DDYZRb42vH0TRGBkk_G0fKxP_kng&usqp=CAU",
+          rating:{rate:3.9,count:120}},
+          {
+
+
+
+
+              id:2,"title":"Mens Casual Premium Slim Fit T-Shirts ",
+              price:22.3,"description":"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+              category:"men's clothing",
+              image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHsoxUOB2sYzT3CtRkOhuakUeZ85qgR0xdOs-G3soEoxM1TAW79X6GBVOdQIADdJlaeSI&usqp=CAU",
+              rating:{"rate":4.1,"count":259}},
+              
+              
+              
+              {
+              id:3,"title":"Mens Cotton Jacket",
+              price:55.99,"description":"great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+              category:"men's clothing",
+              image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkjKJpdU-m5unLH66W_BliEYwIXFjTB8Xlow&usqp=CAU",
+              rating:{"rate":4.7,"count":500}},
+              
+              
+              
+              
+              {
+              id:4,"title":"Mens Casual Slim Fit",
+              price:15.99,"description":"The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+              category:"men's clothing",image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs1x0CMycMnPIiUpR77ojUi8L4rj1TcNgG6g&usqp=CAU",
+              rating:{"rate":2.1,"count":430}},
+              
+              
+              
+              {
+              id:5,
+              title:"John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+              price:695,"description":"From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+              category:"jewelery",
+              image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Cuvs3-_P1Noq4ZClTuKKBVtKFicC3vhPcw&usqp=CAU",
+              rating:{"rate":4.6,"count":400}},
+            ]
+
+
+let k=document.createElement("div")
+document.body.appendChild(k)
+
+for(i=0;i<arr.length;i++){
+
+   
+
+let a=document.createElement("li");
+    a.innerText=arr[i].id;
+    document.body.appendChild(a)
+    k.appendChild(a);
+    
+   
+    
+   
+    let b=document.createElement("li")
+    b.innerText=arr[i].title;
+    document.body.appendChild(b);
+    k.appendChild(b);
+
+
+    let c=document.createElement("li")
+    c.innerText=arr[i].price;
+    document.body.appendChild(c);
+    k.appendChild(c)
+
+
+    let d=document.createElement("li")
+    d.innerText=arr[i].category;
+    document.body.appendChild(d);
+    k.appendChild(d);
+
+
+    let e=document.createElement("img")
+            e.setAttribute("src",arr[i].image) 
+            document.body.appendChild(e)
+                k.appendChild(e)
+
+ 
+}
+            </script>
+        </body>
+    </head>
+</html>
