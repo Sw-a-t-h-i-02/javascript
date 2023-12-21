@@ -1,0 +1,39 @@
+<html>
+    <head>
+<style>
+    body{
+        background-color: lightblue;
+    }
+</style>
+    </head>
+        <body>
+            <img src="" alt="">
+           
+            
+
+             <h1>
+
+             </h1>
+            <script>
+
+var aa=localStorage.getItem("seemore");
+var parsedval=JSON.parse(aa);
+let img=document.getElementsByTagName("img")
+img[0].setAttribute("src",parsedval.image);
+img[0].style.width="400px";
+
+
+
+// var aa=localStorage.getItem("seemore");
+// var parsedval = JSON.parse(aa);
+// let k = document.querySelector("h1")
+// k.innerText = parsedval.description;
+
+
+
+
+
+            </script>
+        </body>
+  
+</html> 
