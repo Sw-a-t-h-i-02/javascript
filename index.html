@@ -1,19 +1,34 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Palette generator</title>
-    <link rel="stylesheet" href="./style.css">
-   <script src="./script.js" defer></script>
+    <title>Image Search App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1>Color palette generator</h1>
-
-    <button class="button">Generate</button>
-    <section class="container"></section>
-    
+    <h1>Image Search App</h1>
+    <form action="">
+        <input type="text" id="search-input" placeholder="search for images">
+        <button id="search-button">Search</button>
+    </form>
+    <div class="search-results">
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1709651483125-dfa559cd920d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHx8" alt="A peaceful women">
+            <a href="https://unsplash.com/photos/a-woman-standing-next-to-a-building-holding-onto-a-door-5U5vjGjrY5I" target="_blank">A peaceful women</a>
+        </div>
+        <div class="search-result">
+            <img src="https://images.unsplash.com/photo-1704799191531-085f46e6221c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjJ8fHxlbnwwfHx8fHw%3D" alt="A peaceful women">
+            <a href="https://unsplash.com/photos/a-view-of-a-snowy-mountain-range-at-night-NplD3x9WFzY" target="_blank">Good Scenary</a>
+        </div>
+        <div class="search-result">
+            <img src="https://plus.unsplash.com/premium_photo-1709065154533-d53fb085f2f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MjZ8fHxlbnwwfHx8fHw%3D" alt="A peaceful women">
+            <a href="https://unsplash.com/photos/a-man-and-a-woman-sitting-in-a-theater-mpz-RlyiCzo" target="_blank">Beautiful Couple</a>
+        </div>
+    </div>
+    <button id="show-more-button"> Show More</button>
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -1,40 +1,55 @@
-const  container=document.querySelector(".container")
-const  button=document.querySelector(".button")
+const accesskey="5yTCa8tBkXJ9R1JQfR33hPf6rtvBWi8aHBjScAamEaU"
 
-button.addEventListener("click",addcolor)
+const FormEl=document.querySelector("form")
+const inputEl=document.getElementById("search-input")
+const searchResults=document.querySelector(".search-results")
+const showMore= document.getElementById("show-more-button")
 
-for(i=1;i<=10;i++){
-    const box=document.createElement("div")
-    box.classList.add("box")
-    container.appendChild(box)
+
+let inputData=""
+let page=1;
+
+async function searchImages(){
+
+    inputData=inputEl.value;
+    const url=`https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accesskey}`
+  const response = await fetch(url)
+  const data=await response.json()
+  const result=data.results
+  if(page===1){
+    searchResults.innerHTML=""
+  }
+  result.map((results)=>{
+
+    const imageWrapper=document.createElement("div")
+    imageWrapper.classList.add("search-result")
+    const image=document.createElement("img")
+    image.src= results.urls.small
+    image.alt=results.alt_description
+    const imageLink=document.createElement("a")
+    imageLink.href=results.links.html
+    imageLink.target="_blank"
+    imageLink.textContent=results.alt_description
+
+    imageWrapper.appendChild(image)
+    imageWrapper.appendChild(imageLink)
+    searchResults.appendChild(imageWrapper)
+})
+page++
+if(page>1){
+
+    showMore.style.display="block"
 }
-let colorblocks=document.querySelectorAll(".box")
-function randomcolorcode(){
-    let chars="0123456789abcdef"
-    let colorlength=6
-    let color=""
-    for(i=0;i<colorlength;i++){
-       let randomcolor=Math.floor(Math.random()* chars.length)
-       color=color+chars.substring(randomcolor,randomcolor+1)
-    }
-    let generatedcolor= `#${color}`
-    return generatedcolor
-}
-function addcolor() {
-    colorblocks.forEach(colorblock => {
-      let newColor=randomcolorcode()
-      colorblock.style.backgroundColor=newColor
-      colorblock.textContent=newColor
-    })
 }
 
+FormEl.addEventListener("submit",(event)=>{
+
+    event.preventDefault()
+    page=1;
+    searchImages()
+})
 
 
-
-
-
-
-
-
-
-
+showMore.addEventListener("click",()=>{
+    searchImages()
+})
