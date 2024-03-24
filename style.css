@@ -89,7 +89,7 @@ body{
     -moz-transition: all 0.4s linear;
     -ms-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
-    border: 3px solid black;
+/*     border: 3px solid black; */
 }
 .search-btn:hover{
     background: var(--tenne-tawny-dark);
